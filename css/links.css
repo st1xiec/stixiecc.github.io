@@ -1,0 +1,70 @@
+.links {
+  margin-top: 80px;
+  width: 400px;
+  display: inline-flex;
+  justify-content: space-between;
+}
+
+.link {
+  height: 72px;
+  width: 72px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  float: left;
+  margin-bottom: 10px;
+  border-radius: 100%;
+  box-shadow: 0 0 8px #445, 0 0 8px #445;
+  transition: box-shadow 0.3s;
+}
+
+.logo {
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 42px;
+  width: 42px;
+  transition: height .1s, width .1s;
+}
+
+.link:hover {
+  box-shadow: 0 0 32px #445, 0 0 32px #445;
+  transform: translateY(0) rotate(0deg);
+}
+
+
+#yt { background-color: #FF0000 }
+#yt-logo { background-image: url(../assets/logo/yt-logo.png) }
+
+#ds { background-color: #7289da }
+#ds-logo { background-image: url(../assets/logo/ds-logo.png) }
+
+#vk { background-color: #597da3 }
+#vk-logo { background-image: url(../assets/logo/vk-logo.png) }
+
+#tw { background-color: #00acee }
+#tw-logo { background-image: url(../assets/logo/tw-logo.png) }
+
+#tg { background-color: #039be5 }
+#tg-logo { background-image: url(../assets/logo/tg-logo.png) }
+
+#gh { background-color: #0c0c0c }
+#gh-logo { background-image: url(../assets/logo/gh-logo.png) }
+
+@media only screen and (max-width: 900px) {
+
+  .links {
+    width: 340px;
+  }
+
+  .link {
+    height: 64px;
+    width: 64px;
+  }
+
+  .logo {
+    height: 42px;
+    width: 42px;
+  }
+}
